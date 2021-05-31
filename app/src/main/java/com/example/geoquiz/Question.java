@@ -3,6 +3,8 @@ package com.example.geoquiz;
 public class Question {
     private int mTextResId;
 
+    private boolean mAnswerTrue;
+
     public int getTextResId() {
         return mTextResId;
     }
@@ -18,8 +20,6 @@ public class Question {
     public void setAnswerTrue(boolean answerTrue) {
         mAnswerTrue = answerTrue;
     }
-
-    private boolean mAnswerTrue;
 
     public Question(int textResId, boolean answerTrue) {
         mTextResId = textResId;
